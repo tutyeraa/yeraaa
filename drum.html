@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="projstyle.css">
+	<title>Drum</title>
+	<style>
+	.cancelbtn {
+		width: 100%;
+		height: 50px;
+	  	background-color: red;
+	  	border-radius: 10px;
+	  	position: absolute;
+	  	margin-top: 475px;
+	  	font-size: 30px;
+	}
+	.cancelbtn:hover{
+		background-color: #A20606;
+	}
+
+	.modal {
+	  border-radius: 10px;
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; 
+	  left: 130px;
+	  top: 35px;
+	  width: 80%; /* Full width */
+	  height: 80%; /* Full height */
+	  background-color: rgba(0,0,0,0.95); 
+	  /*padding-top: 0px;*/
+	}
+	#button {
+		background-color: white;
+ 	 	border-radius: 10px;
+	}
+	#button:hover {
+ 	 	background-color: black;
+ 	 	color: white;
+ 	 	border-radius: 10px;
+ 	 	border:solid black;
+	}
+	#b{
+		margin:0;
+		color: white;
+		width: 100%;
+		border-radius: 5px;
+		background-color: black;
+		border: solid black;
+		text-align: center;
+	}
+
+</style>
+</head>
+<body>
+	<h1 id="b">Drum</h1>
+	<table style="width:100%">
+  <tr>
+    <td>
+<img class = "images" src="images/w.png "></td>
+    <td>
+<img class = "images" src="images/e.png "></td>
+    <td>
+<img class = "images" src="images/r.png "></td>
+    <td>
+<!-- <img src="images/d.jpg "></td> -->
+  </tr>
+</table>
+	
+	<h2>The Drum is a member of the percussion group of musical instruments. In the Hornbostel-Sachs classification system, it is a membranophone. Drums consist of at least one membrane, called a drumhead or drum skin, that is stretched over a shell and struck, either directly with the player's hands, or with a percussion mallet, to produce sound. There is usually a resonance head on the underside of the drum, typically tuned to a slightly lower pitch than the top drumhead. Other techniques have been used to cause drums to make sound, such as the thumb roll. Drums are the world's oldest and most ubiquitous musical instruments, and the basic design has remained virtually unchanged for thousands of years.
+		<br>
+	<h1>Price: $159.9-$699.9</h1>
+	<audio controls>
+		<source src="dr.wav" type="audio/wav">
+	</audio>
+	
+	<button style="width: 100%; height: 50px; font-size: 30px;" id="button" type="button" onclick="document.getElementById('Win').style.display='block'">Add to the cart</button>
+
+<div 
+ id="Win" class="modal">
+	<div class="igs">
+		<img style="position: absolute; width: 300px; height: 300px; margin-left: 70px;" src="images/w.png">
+		<p style="position: absolute; font-size: 30px; color: white; margin-left: 100px; margin-top: 300px;">Drum set Yamaha</p>
+		<img style="position: absolute; width: 300px; height: 300px; margin-left: 400px;" src="images/e.png">
+		<p style="position: absolute; font-size: 30px; color: white; margin-left: 440px; margin-top: 300px;">Single drum</p>
+		<img style="position: absolute; width: 300px; height: 300px; margin-left: 720px;" src="images/r.png">
+		<p style="position: absolute; font-size: 30px; color: white; margin-left: 740px; margin-top: 300px;">Drum set professional</p>
+		
+		<p style="position: absolute; font-size: 30px; color: white; margin-left: 100px; margin-top: 350px;"><b>$399.9<b></p>
+		<button onclick="alert('Item was added to the cart')" id="button" style="position: absolute; font-size: 30px; margin-left: 100px; margin-top: 400px;">To the Cart</button>
+		
+		<p style="position: absolute; font-size: 30px; color: white; margin-left: 440px; margin-top: 350px;"><b>$159.9<b></p>
+		<button onclick="alert('Item was added to the cart')" id="button" style="position: absolute; font-size: 30px; margin-left: 440px; margin-top: 400px;">To the Cart</button>
+
+		<p style="position: absolute; font-size: 30px; color: white; margin-left: 740px; margin-top: 350px;"><b>$569.9<b></p>
+		<button onclick="alert('Item was added to the cart')" id="button" style="position: absolute; font-size: 30px; margin-left: 740px; margin-top: 400px;">To the Cart</button>
+	      <button id="close" type="button" onclick="document.getElementById('Win').style.display='none'" class="cancelbtn">Cancel</button>
+	</div>
+</div>
+</body>
+</html>

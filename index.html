@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey = 7034c126-d665-4ed3-b734-5137974d2c69&lang=en_US" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="w5t2.css">
+  <link rel="stylesheet" href="projectless.css">
+  <link rel="stylesheet" href="media.css">
+  <script src="w5t2.js">
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuseMart | Shop of musical instruments</title>
+<style>
+  body{
+    margin: 0;
+  }
+</style>
+<script type="text/javascript">
+
+ymaps.ready(init);
+function init(){
+var myMap = new ymaps.Map("map", {
+center: [43.237464, 76.914765],
+zoom: 18
+});
+
+}
+
+</script>
+
+</head>
+
+
+<body>
+<!-- Navbar -->
+<nav class="menu">
+  <ul>
+
+    <li><a href="Account.html"><img id="account-icon" src="images/acc.png"></a></li>
+
+  </ul>
+</nav>
+
+<div id="container">
+  <img id="resim" style="width: 100%;height: 800px;">
+  <p id="P">Welcome</p>
+    <div id="search">
+      <form class="search-form">
+        <input type="text" id="search-input" placeholder="Search for..." style="color: white; background-color: rgb(0, 0, 0); border-radius: 20px;font-family: 'Roboto Slab', serif; ">
+      </form>
+    </div>
+</div>
+
+<!-- Select -->
+<div id="table" style="border: solid black;">
+ <ul>
+    <li><a href="guitar.html">
+      <img id="icons" class="icon1" src="images/gicon.png">
+    </a><p class="p1">Guitar</p>
+    </li>
+    <li><a href="piano.html">
+      <img id="icons" class="icon2" src="images/picon.png">
+    </a><p class="p1" id="p2">Piano</p>
+    </li>
+    <li><a href="flute.html">
+      <img id="icons" class="icon3" src="images/wicon.png">
+    </a><p class="p1" id="p3">Flute</p>
+     </li>
+    <li><a href="drum.html">
+      <img id="icons" class="icon4" src="images/djembe.png">
+    </a><p class="p1" id="p4">Drum</p>
+    </li>
+  </ul>
+   <div class="table2">
+  <ul>
+    <li><a href="harp.html">
+      <img id="icons" src="images/harp.png">
+    </a><p class="p1">Harp</p>
+    </li>
+    <li><a href="wind.html">
+      <img id="icons" src="images/saxophon.png">
+    </a><p class="p1">Wind</p>
+    </li>
+    <li><a href="violin.html">
+      <img id="icons" src="images/violin.png">
+    </a><p class="p1">Violin</p>
+     </li>
+    <li><a href="dombyra.html">
+      <img id="icons" src="images/bell.png">
+    </a><p class="p1">Other</p>
+    </li>
+  </ul>
+  </div>
+</div>
+
+<div id="video-div" style="width: 100%; height: 700px; background-color: white;">
+  <h1 id="video-info">Here is the video about musical instuments</h1>
+  <iframe  src="https://www.youtube.com/embed/_Ns9wBGokEM" width="800px" height="500px;"></iframe>
+</div>
+
+<div id="block3">
+  <div id="WeAre">
+    <h1 id="WhoWeAre">Who we are?</h1>
+  </div>
+  <div id="box-info">
+    <h1 id="heading-info"><span id="info-Who ">MuseMart is a partnership with limited liability which has been successfully operating in Asia for 10 years as One of the biggest musical instrments store.</h1>
+    <img id="image-hand" src="images/orch.jfif">
+  </div>
+</div>
+
+  <div class="why">
+    <div style="font-size: 40px; position: absolute; margin-top: 70px; margin-left: 50px;">
+      <h1 id="why-us"><b>Why Us?<b></h1>
+    </div>
+
+    <div id="box-1">
+      <img id="image1" src="images/file.png">
+      <div style="margin-left: 10px;">
+      <h1 style="font-size: 26px">We handle forms and fillings!</h1>
+      <p style="font-size: 20px;">So long, red tape. All you need to do is answer one of our simplified questionnaires and we'll do the fun part.</p>
+      </div>
+    </div>
+
+    <div id="box-2">
+      <img id="image2" src="images/free-delivery.png">
+      <div style="margin-left: 10px;">
+      <h1 style="font-size: 26px">Free Shipping!</h1>
+      <p style="font-size: 20px;">We take all shipping expenses.</p>
+      </div>
+    </div>
+
+    <div id="box-3">
+      <img id="image3" src="images/credit-card.png">
+      <h1 style="font-size: 26px">Secure Shopping!</h1>
+      <p style="font-size: 20px;">Feel unsatisfied? Order is damaged? Feel free to open dispute. You will be refunded as soon as possible.</p>
+    </div>
+  </div>
+
+
+
+  <div class="sur">
+      <div onclick="f()" ><img id="first" style="width: 100%;height: 100%"></div>
+      <div onclick="s()"><img id="second" style="width: 100%;height: 100%"></div>
+      <div onclick="t()" ><img id="three" style="width: 100%;height:100%;"></div>
+      <div onclick="x()" ><img id="four" style="width: 100%;height: 100%"></div>
+  </div>
+
+  <script>
+      document.getElementById("resim").src =arr[q].src;
+      document.getElementById("first").src =arr[q].src;
+      document.getElementById("second").src =arr[1].src;
+      document.getElementById("three").src =arr[2].src;
+      document.getElementById("four").src =arr[3].src;
+      document.getElementById("PA").innerHTML = pass[0];
+  </script>
+
+
+  <div id="footer">
+
+    <h1 style="margin-left: 50px; margin-top: 50px; position: absolute; color: white">We are in:</h1>
+
+    <div style="position: absolute; margin-top: 120px; margin-left: 50px">
+
+      <div style="border-radius: 20px; width: 50px; height: 50px; background-color: white; position: absolute; margin-left: 180px">
+        <a href="https://www.facebook.com/qalihanov_yer"><img id="i" style="width: 50px; height: 50px;" src="images/facebook.png"></a>
+      </div>
+      <div style="position: absolute; border-radius: 60px; width: 50px; height: 50px; background-color: white">
+        <a href="https://www.instagram.com/qalihanov"><img id="i" style="width: 50px; height: 50px;" src="images/instagram.png"></a>
+      </div>
+      <div style="position: absolute; border-radius: 60px; width: 50px; height: 50px; background-color: white; margin-left: 120px;">
+        <img id="i" style="width: 50px; height: 50px;" src="images/google-plus.png">
+      </div>
+      <div style="position: absolute; border-radius: 20px; width: 50px; height: 50px; background-color: white;  margin-left: 60px;">
+        <img id="i" style="width: 50px; height: 50px;" src="images/linkedin.png">
+      </div>
+    </div>
+
+    <div id="address">
+      <address style="color: white;">
+        Kazakhstan<br>
+        Almaty, Almaty Tower<br>
+        Contact us: <span style="font-size: 20px"><a href="">MuseMart@gmail.com</a></span> <br>
+        <span style="margin-left: 80px; font-size: 20px;">87086224656</span>
+      </address>
+    </div>
+
+
+<!--
+      <div style="position: absolute; margin-left: 1100px; margin-top:50px; margin-right: 20px;" class="mapouter"><div class="gmap_canvas">
+        <iframe width="200" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Almaty%2C%20%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B%20%D0%A2%D0%B0%D1%83%D1%8D%D1%80%D1%81&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></div><style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}</style>
+      </div> -->
+
+      <div id="map"></div>
+
+  </div>
+
+</body>
+</html>

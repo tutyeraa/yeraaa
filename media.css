@@ -1,0 +1,168 @@
+@media screen and (max-width: 500px){
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+   
+    #P{
+        position: relative;
+        left:25%;
+        top: 0px;
+        font-size: 50px;
+        width: 50%;
+    }
+   
+    #search-input{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .table2 {
+        display: none;
+    }
+    #table {
+        position: relative;
+        margin-left: 50px;
+        margin-top: 50px;
+        width: 80%;
+        height: 350px;
+    }
+    ul{
+        width: 90%;
+    }
+    .icon1 {
+        position: absolute;
+        left: 70px;
+    }
+    .p1 {
+        position: relative;
+        left: 20px;
+        top: 50px;
+    }
+    .icon2{
+        position: absolute;
+        left: 250px;
+    }
+    #p2{
+        position: absolute;
+        left: 240px;
+        margin-top: 70px;
+    } 
+    .icon3{
+        position: absolute;
+        left: 70px;
+        top: 220px;
+    }
+    #p3{
+        position: absolute;
+        left: 60px;
+        top: 260px;
+    } 
+    .icon4{
+        position: absolute;
+        left: 250px;
+        top: 220px;
+    }
+    #p4{
+        position: absolute;
+        left: 240px;
+        top: 260px;
+    } 
+    #video-info{
+        position: relative;
+        margin-left: 80px;
+        font-size: 30px;
+    }
+    iframe{
+        position: relative;
+        margin-left: 25px;
+        margin-top: 15px;
+        width: 450px;
+        height: 300px;
+        border: none;
+    }
+    #block3{
+        position: absolute;
+        top: 1530px;
+        width: 680px;
+    }
+    #WeAre{
+        position: relative;
+        top:320px;
+    }
+    #WhoWeAre{
+        font-size: 50px;
+        z-index: 1;
+    }
+    #image-hand{
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        width: 50%;
+        height: 300px;
+    }
+    #heading-info{
+        position: relative;
+        top: 180px;
+        width: 60%;
+        z-index: 1;
+        font-size: 22px;
+        font-weight: normal;
+    }
+    #box-info{
+        position: relative;
+        width: 73%;
+        height: 400px;
+    }
+    .why{
+        position: absolute;
+        margin-top: 100px;
+        height: 600px;
+    }
+    #why-us{
+        position: relative;
+        left: 30px;
+        top: 0px;
+        font-size: 55px;
+    }
+    #image1{
+        position: relative;
+        margin-top: 0px;
+        width: 200px;
+        height: 200px;
+    }
+    #image2{
+        width: 200px;
+        height: 200px;
+    }
+    #image3{
+        width: 200px;
+        height: 200px;
+    }
+    #box-1{
+        position: relative;
+        margin-top: 220px;
+    }
+    #box-2{
+        position: relative;
+        margin-left:90px;
+        margin-top: 150px;
+    }
+    #box-3{
+        position: relative;
+        margin-left:90px;
+        margin-top: 10px;
+    }
+    #footer{
+        margin-top: 1300px;
+        height: 430px;
+    }
+    #address{
+        margin-left: 60%;
+    }
+    #map {
+        position: relative;
+        float:  left;
+        width: 100%;
+        margin-top: 220px;
+    }
+}

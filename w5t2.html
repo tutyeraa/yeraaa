@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="w5t2.css">
+	<script src="w5t2.js">
+	</script>
+</head>
+<body>
+	<div class="cont">
+		<div class="page1">
+			<img id="resim" style="width: 750px;height: 550px;">
+			<p id="resim2"></p>
+		</div>
+		
+
+
+
+	
+		<div class="sur">	
+			<div onclick="f()" ><img id="first" style="width: 100%;height: 100%"></div>
+			<div onclick="s()"><img  id="second" style="width: 100%;height: 100%"></div>
+			<div onclick="t()" ><img id="three" style="width: 100%;height:100%;" ></div>
+			<div onclick="x()" ><img id="four" style="width: 100%;height: 100%"></div>
+		
+		</div>
+
+	</div>
+	<script>
+			document.getElementById("resim").src =arr[q].src;
+			document.getElementById("first").src =arr[q].src;
+			document.getElementById("second").src =arr[1].src;
+			document.getElementById("three").src =arr[2].src;
+			document.getElementById("four").src =arr[3].src;
+			document.getElementById("PA").innerHTML = pass[0];
+	</script>
+
+
+</body>
+</html>

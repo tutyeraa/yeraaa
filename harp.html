@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- <link rel="stylesheet" type="text/css" href="projstyle.css"> -->
+	<title>Harp</title>
+	<style>
+	.cancelbtn {
+		width: 100%;
+		height: 50px;
+	  	background-color: red;
+	  	border-radius: 10px;
+	  	position: absolute;
+	  	margin-top: 475px;
+	  	font-size: 30px;
+	}
+	.cancelbtn:hover{
+		background-color: #A20606;
+	}
+
+	.modal {
+	  border-radius: 10px;
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1;
+	  left: 130px;
+	  top: 35px;
+	  width: 80%; /* Full width */
+	  height: 80%; /* Full height */
+	  background-color: rgba(0,0,0,0.95);
+	  /*padding-top: 0px;*/
+	}
+	#button {
+		background-color: white;
+ 	 	border-radius: 10px;
+	}
+	#button:hover {
+ 	 	background-color: black;
+ 	 	color: white;
+ 	 	border-radius: 10px;
+ 	 	border:solid black;
+	}
+	#b{
+		margin:0;
+		color: white;
+		width: 100%;
+		border-radius: 5px;
+		background-color: black;
+		border: solid black;
+		text-align: center;
+	}
+
+</style>
+</head>
+<body>
+	<h1 id="b">Saxophone</h1>
+	<table style="width:100%">
+  <tr>
+    <td>
+<img style="width: 400px; height: 300px; margin-left: 400px;" class = "images" src="images/z.png"></td>
+    <td>
+  </tr>
+</table>
+
+	<h2>The saxophone (referred to colloquially as the sax) is a family of woodwind instruments usually made of brass and played with a single-reed mouthpiece. Although most saxophones are made from brass, they are categorized as woodwind instruments, because sound is produced by an oscillating reed (traditionally made out of woody cane) rather than lips vibrating in a mouthpiece cup as with the brass instrument family. As with the other woodwind instruments, the pitch of the note being played is controlled by covering holes in the body tube to control the resonant frequency of the air column by changing the effective length of the tube. The player covers or uncovers the holes by pressing keys</h2>
+		<br>
+	<h1>Price: $39.9-$259.9</h1>
+	<button style="width: 100%; height: 50px; font-size: 30px; margin-top: 80px;" id="button" onclick="document.getElementById('Win').style.display='block'" type="button">Add to the cart</button>
+
+
+	<div
+ id="Win" class="modal">
+	<div class="igs">
+		<img style="position: absolute; width: 300px; height: 300px; margin-left: 400px; " src="images/z.png">
+		<p style="position: absolute; font-size: 30px; color: white; margin-left: 500px; margin-top: 300px;">Saxophone</p>
+		<p style="position: absolute; font-size: 30px; color: white; margin-left: 500px; margin-top: 350px;"><b>$159.9<b></p>
+		<button onclick="alert('Item was added to the cart')" id="button" style="position: absolute; font-size: 30px; margin-left: 500px; margin-top: 400px;">To the Cart</button>
+	      <button id="close" type="button" onclick="document.getElementById('Win').style.display='none'" class="cancelbtn">Cancel</button>
+	</div>
+</div>
+
+</body>
+</html>
